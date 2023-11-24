@@ -6,7 +6,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-size: var(--text-size);
   line-height: 23.4px;
-  background-image: url(../images/cover-image-dark.png);
+  
   background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-position: top center;
@@ -340,6 +340,7 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     inset-inline-start: -20px;
+    line-height: 99px;
   }
 
   .header-text {
@@ -433,6 +434,7 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     inset-inline-start: -10px;
+    line-height: 95.70px;
   }
 
   .header-text {

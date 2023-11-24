@@ -1,4 +1,2 @@
-https://github.com/vipkifonn/posmotri_v_okno.git
+https://github.com/vipkifonn/slozhno-sosredotochitsya.git
 
-Сделал стилизацию готового макета используя флекс боксы, 
-стилизовал поля ввода чекбоксы и лист выбора видео с помощью псевдоклассов и псевдо элементов 
