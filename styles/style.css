@@ -7,6 +7,10 @@
   font-size: var(--text-size);
   line-height: 23.4px;
   background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -88,7 +92,7 @@
 
 .title {
   color: var(--text-title-color);
-  font-weight: 700;
+  font-weight: bold;
   background-color: var(--accent-color);
 }
 
@@ -146,7 +150,10 @@
 
 .link:focus {
   outline: 1px solid var(--theme-select-color);
-  outline-offset: -3px;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--theme-select-color);
 }
 
 .section-title {
@@ -293,7 +300,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 24.6% 29.8% 40.5%;
-    gap: 25px 19px;
+    gap: 19px;
   }
 
   .image-1 {
@@ -366,12 +373,8 @@
     grid-template-rows: 1fr 1fr;
   }
 
-  .section-what {
-    grid-template-rows: min-content 1fr;
-  }
-
   .section-what .section-title {
-    width: calc(100% / 3);
+    width: calc(100% / 3.1);
   }
 
   .article-what {
@@ -479,16 +482,12 @@
     gap: 20px;
   }
 
-  .section-what {
-    grid-template-rows: min-content 1fr;
-  }
-
   .section-what .section-title {
     width: 100%;
   }
 
   .article-what {
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
   }
 
   .section-how {

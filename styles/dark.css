@@ -4,7 +4,7 @@
   переключая тему
 */
 :root .theme_dark {
-  --bg-color: #000028;
+  --bg-color: #00183f;
   --text-color: #f1b2ce;
   --text-title-color: #000028;
   --accent-color: #ff0070;
@@ -21,4 +21,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
 }
