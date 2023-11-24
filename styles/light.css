@@ -3,10 +3,51 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_light {
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --text-title-color: #353430;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --theme-select-color: #353430;
+  --theme-select-color-transparent: #35343050;
+  --main-font: "IBM Plex mono";
+  --text-size: 18px;
+  --bg-image: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --text-title-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --theme-select-color: #353430;
+    --theme-select-color-transparent: #35343050;
+    --main-font: "IBM Plex mono";
+    --text-size: 18px;
+  }
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .header {
+  background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.theme_light .rec {
+  display: none;
+}
+.theme_light .rec::after {
+  display: none;
 }
