@@ -22,7 +22,6 @@
   grid-template-rows: 1fr min-content 1fr;
   min-height: 100vh;
   padding: 20px;
-  background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -98,7 +97,6 @@
 
 .header__theme-menu {
   display: grid;
-  
 }
 
 .header__theme-menu-list {
@@ -437,7 +435,7 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     inset-inline-start: -10px;
-    line-height: 95.70px;
+    line-height: 95.7px;
   }
 
   .header-text {
