@@ -6,7 +6,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-size: var(--text-size);
   line-height: 23.4px;
-  
   background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-position: top center;
@@ -92,13 +91,14 @@
 
 .title {
   color: var(--text-title-color);
-  font-weight: bold;
+  font-size: var(--main-font);
+  font-weight: 700;
   background-color: var(--accent-color);
 }
 
 .header__theme-menu {
   display: grid;
-  padding-inline-start: 20px;
+  
 }
 
 .header__theme-menu-list {
@@ -111,7 +111,6 @@
   padding: 0 13px;
   color: var(--theme-select-color);
   font-weight: 400;
-  line-height: 18px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -270,6 +269,7 @@
   .section-why {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    column-gap: 20px;
   }
 
   .article-why {
@@ -290,6 +290,7 @@
 
   .section-how {
     grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
   }
 
   .block-how {
@@ -300,7 +301,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 24.6% 29.8% 40.5%;
-    gap: 19px;
+    gap: 22px 19px;
   }
 
   .image-1 {
@@ -368,6 +369,7 @@
   .section-why {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    column-gap: 20px;
   }
 
   .article-why {
@@ -379,11 +381,12 @@
   }
 
   .article-what {
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
   }
 
   .section-how {
     grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
   }
 
   .block-how {
@@ -394,7 +397,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 24.3% 29.1% 40.3%;
-    gap: 25px 19px;
+    gap: 20px;
   }
 
   .image-1 {
